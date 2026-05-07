@@ -5,8 +5,8 @@ from sklearn.compose import ColumnTransformer
 
 
 # Load Data from excel
-train_df = pd.read_csv(r"E:\aFCIS\8th semister\AI\project\IncomePredictionProject\train_data.csv")#update thia line
-test_df = pd.read_csv(r"E:\aFCIS\8th semister\AI\project\IncomePredictionProject\test_data.csv")#update this line
+train_df = pd.read_csv(r".\train_data.csv")
+test_df = pd.read_csv(r".\test_data.csv")
 
 X_train = train_df.drop("Income", axis=1)
 y_train = train_df["Income"]
